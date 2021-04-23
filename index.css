@@ -1,0 +1,23 @@
+
+.text {font-family: Arial, Helvetica, sans-serif;
+}
+#title1 {
+    text-align: center;
+}
+#title2 {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px blue;  
+    background-color: yellow; 
+}
+
+#head{
+    display: inline;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;  
+    background-color: yellow; 
+  }
