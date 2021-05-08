@@ -1,0 +1,14 @@
+.colors {
+  --headline-color-on-white: #403134; /* headlines on a white background */
+  --headline-color-on-color: #e2c2b3; /* headlines on a colored background */
+  --paragraph-color-on-white: #403134; /* paragraph text on a white background */
+  --paragraph-color-on-color: #e2c2b3; /* paragraph text on a colored background */
+  --paragraph-background-color: #403134;
+  --nav-link-color: #403134;
+  --nav-background-color: #e2c2b3;
+  --nav-hover-link-color: #697478;
+  --nav-hover-background-color: #f7f3f4;
+}
+.colorpalettepiture {
+  width: 300px;
+}
