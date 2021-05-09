@@ -5,44 +5,56 @@
   <meta charset="utf-8">
 
   <title>typography</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-
   <link rel="stylesheet" href="css/site-plan.css">
+  <link rel="stylesheet" href="css/normalize.css">
 
 </head>
 
-<body>
-  <script src="#"></script>
-<h2>Typography</h2>
-<h3>
-    Typography
-  </h3>
-  
-  <h4>
-    Heading Font: Montserrat
+<body id="typography-container">
 
-  </h4>
+  <script src="/js/site-plan.js"></script>
+
+  <header>
+    <div class="logo-box">
+      <img
+        src="images/weatherahead-logo.png"
+        alt="Logo image"
+        width="100"
+      />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="color-scheme.html">Color Scheme</a></li>
+        <li><a href="target-audience.html">Target Audience</a></li>
+        <li><a href="typography.html">Typography</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Typography</h2>
+  <h2 class="montserrat">
+    Heading Font: Montserrat
+  </h2>
   <p>
     I chose the motserrat font because it is professional looking, as well
     as easy to read. It is a good match to the aesthetic I am going for,
     colorful and easy to understand.
-  
   </p>
 
-  <h4>
+  <h2 class="courier">
     Paragraph Font: Courier New
-   
-  </h4>
+  </h2>
+
   <p>
     I chose the paragraph font to be courier new because it is easy to read
     and goes well with my header font.
-   
   </p>
 
-  <h4>
+  <h2>
     Normal paragraph example
-  </h4>
+  </h2>
+  
   <p>
     The best Whitewater Rafting in Colorado, White Water Rafting Company
     offers rafting on the Colorado and Roaring Fork Rivers in Glenwood
@@ -53,12 +65,16 @@
     Colored paragraph example
   </h4>
   <p class="colored">
-     No matter what type of river adventures you are seeking, White Water
-     Rafting Company can make it happen for you.Trips vary from mild
-      and great for families, to trips exclusively for physically fit 
-      and experienced rafters. 
+     No matter what type of river adventures you are seeking, White Water 
+     Rafting Company can make it happen for you.Trips vary from mild and great 
+     for families, to trips exclusively for physically fit and experienced rafters. 
   </p>
 
-
 </body>
+
+<footer>
+    <p>&copy; <span id="currentYear"></span> | Avery Lawton | <a href="https://www.byui.edu/online">BYU-I Online Learning</a></p>
+    <p>Last Modified: <span id="lastmod"></span></p>
+  </footer>
+
 </html>

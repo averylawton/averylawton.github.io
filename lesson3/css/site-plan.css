@@ -1,20 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 header {
   padding: 5px;
-  background-color: #e4cfb1;
+  background-color: var(--secondary-color);
   border-radius: 10px;
 }
 
-.colors {
-  --headline-color-on-white: #403134; /* headlines on a white background */
-  --headline-color-on-color: #e2c2b3; /* headlines on a colored background */
-  --paragraph-color-on-white: #403134; /* paragraph text on a white background */
-  --paragraph-color-on-color: #e2c2b3; /* paragraph text on a colored background */
-  --paragraph-background-color: #403134;
-  --nav-link-color: #403134;
-  --nav-background-color: #e2c2b3;
-  --nav-hover-link-color: #697478;
-  --nav-hover-background-color: #f7f3f4;
+body {
+  font-size: 14px;
+  background-color: #fffbee;
 }
-.colorpalettepiture {
-  width: 300px;
+
+.montserrat {
+  font-family: Montserrat;
+  font-size: 14px;
 }
+
+.courier {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: black;
+  border-radius: 10px;
+}
+
+/* color scheme-------------------------------------------------------------------------------------- */
+
+#color-scheme-container {
+  display: flex;
+}
+
+#colorpalettepicture {
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+:root {
+  --primary-color: #23001e;
+  --secondary-color: #f55355;
+  --accent1-color: #697478;
+  --accent2-color: #f7f3f4;
+  --accent3-color: #243e36;
+
+  --heading-font: montserrat, Times-new-roman, Tinos;
+  --paragraph-font: Garamond, Helvetica, courier, sans-serif;
+
+  --headline-color-on-white: #fffbee; /* headlines on a white background */
+  --headline-color-on-color: #23001e; /* headlines on a colored background */
+  --paragraph-color-on-white: #f55355; /* paragraph text on a white background */
+  --paragraph-color-on-color: #67697c; /* paragraph text on a colored background */
+  --paragraph-background-color: #243e36;
+  --nav-link-color: #23001e;
+  --nav-background-color: #fffbee;
+  --nav-hover-link-color: #fffbee;
+  --nav-hover-background-color: #23001e;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2 {
+  background-color: var(--accent2-color);
+}
+.accent3 {
+  background-color: var(--accent3-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: white;
+}
+
+/* end color scheme-------------------------------------------------------------------------------------- */
+
+/* index------------------------------------------------------------------------------------------------- */
+#index-container {
+  display: flex;
+}
+/* end index--------------------------------------------------------------------------------------------- */
+
+/* target-audience--------------------------------------------------------------------------------------- */
+#target-audience-container {
+  display: flex;
+}
+/* end target-audience----------------------------------------------------------------------------------- */
+
+/* typography-------------------------------------------------------------------------------------------- */
+#typography-container {
+  display: flex;
+}
+/* end typography---------------------------------------------------------------------------------------- */

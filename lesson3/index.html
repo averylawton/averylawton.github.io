@@ -8,31 +8,52 @@
   <meta name="description" content="weather ahead site plan">
 
   <link rel="stylesheet" href="css/site-plan.css">
+  <link rel="stylesheet" href="css/normalize.css">
 
 </head>
 
-<body>
+<body id="index-container">
+   
+ <script src="js/site-plan.js"></script>
+
+ <header>
+    <div class="logo-box">
+      <img
+        src="images/weatherahead-logo.png"
+        alt="Logo image"
+        width="100"
+      />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="color-scheme.html">Color Scheme</a></li>
+        <li><a href="target-audience.html">Target Audience</a></li>
+        <li><a href="typography.html">Typography</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+ <img id="sitelogo" src="images/weatherahead-logo.png" alt="Logo">   
 
  <h2>Site description</h2>
  <p>
-    The purpose of this document is to describe the weatherahead.com website. 
-   it will describe the purpose and intended audience, organization and structure, 
-    style elements, etc. It will be used as a planning tool for
-    the personal site, weatherahead.com, to be developed this semester.
+    The weatherahead.com website is a website dedicated to a small town. Its main content is weather related information, but it also has
+    promotions and town news.
  </p>
- <h3>site name</h3>
- <p>This site is going to be called Weatherahead.com. 
-     It is a small home town's home page, focoused mainly on weather forcasts.
+ <h3>Weatherahead</h3>
+ <p>This site is going to be called Weatherahead.com. It is a small home town's home page, focoused mainly on weather forcasts.
  </p>
 
- <h3>weatheraway.com's purpose</h3>
+ <h3>weatherahead.com's purpose</h3>
  <p>
      The purpose of this website is to give daily updates of a small town's weather, events, and 
      pictures to advertize the town's attractions. This town is known for its tornadoes, so
       storm chasers are frequent tourists.
  </p>
-    
-  <script src="js/scripts.js"></script>
+
+ <img id="sitemap" src="images/site-map.png" alt="Site Map">   
 
   <a href="/lesson3/target-audience.html">Target audience</a><br>
   <a href="/lesson3/color-scheme.html">color scheme</a><br>
@@ -40,4 +61,10 @@
 
 
 </body>
+
+<footer>
+    <p>&copy; <span id="currentYear"></span> | Avery Lawton | <a href="https://www.byui.edu/online">BYU-I Online Learning</a></p>
+    <p>Last Modified: <span id="lastmod"></span></p>
+  </footer>
+
 </html>
