@@ -1,43 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+/* GLOBAL STYLES */
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3em 1.5em;
+}
+
 header {
-  padding: 5px;
-  background-color: var(--secondary-color);
-  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header nav li {
+  flex-basis: 100%;
 }
 
 body {
-  font-size: 14px;
-  background-color: #fffbee;
+  font-family: "Courier New";
 }
-
-.montserrat {
+h1 {
   font-family: Montserrat;
-  font-size: 14px;
 }
-
-.courier {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 14px;
+h2 {
+  font-family: Montserrat;
 }
-
-footer {
-  background-color: var(--secondary-color);
-  color: black;
-  border-radius: 10px;
-}
-
-/* color scheme-------------------------------------------------------------------------------------- */
-
-#color-scheme-container {
-  display: flex;
-}
-
-#colorpalettepicture {
-  max-width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+h3 {
+  font-family: Montserrat;
 }
 
 :root {
@@ -47,8 +54,8 @@ footer {
   --accent2-color: #f7f3f4;
   --accent3-color: #243e36;
 
-  --heading-font: montserrat, Times-new-roman, Tinos;
-  --paragraph-font: Garamond, Helvetica, courier, sans-serif;
+  --heading-font: Montserrat, Times-new-roman, Tinos;
+  --paragraph-font: "Courier New", Garamond, Helvetica, courier, sans-serif;
 
   --headline-color-on-white: #fffbee; /* headlines on a white background */
   --headline-color-on-color: #23001e; /* headlines on a colored background */
@@ -59,6 +66,51 @@ footer {
   --nav-background-color: #fffbee;
   --nav-hover-link-color: #fffbee;
   --nav-hover-background-color: #23001e;
+}
+
+header {
+  padding: 5px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+}
+
+main {
+  padding: 15px;
+}
+
+body {
+  font-size: 14px;
+  background-color: #fffbee;
+}
+
+.heading-text {
+  font-family: var(--heading-font);
+  font-size: 14px;
+}
+
+.paragraph-text {
+  font-family: var(--paragraph-font);
+  font-size: 14px;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: black;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+/* color scheme-------------------------------------------------------------------------------------- */
+
+#color-scheme-container {
+  display: block;
+}
+
+#colorpalettepicture {
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .primary {
@@ -86,18 +138,49 @@ p.colored {
 
 /* index------------------------------------------------------------------------------------------------- */
 #index-container {
-  display: flex;
+  display: block;
 }
+
+#sitelogobig {
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* end index--------------------------------------------------------------------------------------------- */
 
 /* target-audience--------------------------------------------------------------------------------------- */
 #target-audience-container {
-  display: flex;
+  display: block;
 }
 /* end target-audience----------------------------------------------------------------------------------- */
 
 /* typography-------------------------------------------------------------------------------------------- */
 #typography-container {
-  display: flex;
+  display: block;
 }
 /* end typography---------------------------------------------------------------------------------------- */
+
+/* Tablet Views */
+@media only screen and (min-width: 37.5em) {
+  header nav ul {
+    flex-wrap: wrap;
+  }
+  header nav li {
+    flex: 1 1 50%;
+  }
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+  header {
+    flex-wrap: nowrap;
+  }
+  header nav ul {
+    flex-wrap: nowrap;
+  }
+  header nav li {
+    flex: 3;
+  }
+}
