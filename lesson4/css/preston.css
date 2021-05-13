@@ -85,13 +85,6 @@ nav {
   width: 50%;
 }
 
-#mapimage {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
 .fivedayforcastimg {
   display: none;
 }
@@ -125,7 +118,12 @@ footer {
   color: #23001e;
 }
 #footertext {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  padding: 20px 20px 20px 20px;
+}
+
+#mapimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }

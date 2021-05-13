@@ -50,7 +50,6 @@
   }
 
   #herosection {
-    border: 1px solid #dddddd;
     position: relative;
   }
 
@@ -63,7 +62,6 @@
     top: 0px;
     z-index: 1000;
     float: left;
-
     position: absolute;
     left: 0px;
     top: 0px;
@@ -88,8 +86,25 @@
     background-color: transparent;
   }
 
+  #forecast {
+    background-color: red;
+    position: relative;
+  }
+  #articleimage {
+    background-color: blue;
+    float: right;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
   footer {
+    clear: both;
     max-width: 1100px;
     margin: auto;
+  }
+
+  #mapimage {
+    align-self: flex-start;
   }
 }
