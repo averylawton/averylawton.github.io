@@ -1,13 +1,51 @@
 /************************************** small view *******************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  background-color: #fffbee;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.logo-box {
+  border-radius: 55px;
+  float: left;
+  margin-left: auto;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  font-family: "montserrat";
+  margin-top: 40px;
+}
+h2 {
+  font-family: "montserrat";
+}
+h3 {
+  font-family: "montserrat";
+}
+
 nav {
+  display: block;
+  position: fixed;
+  top: 10px; /** NOTE: decrease The pixels if want less space */
+  right: 10px; /** NOTE: Change This line */
+
   margin: 0 auto;
   max-width: 760px;
   background-color: #f55355;
+  font-family: "Courier New", Courier, monospace;
+  justify-content: center;
 }
 .navigation {
   list-style: none;
   padding: 0;
 }
+
 .navigation li:first-child {
   display: block;
 }
@@ -27,26 +65,67 @@ nav {
   background-color: #23001e;
 }
 
-/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
-  <ul class="navigation responsive">
-*/
 .responsive li {
   display: block;
 }
 
-/* Media Query for medium+ views */
-@media only screen and (min-width: 32.5em) {
-  .navigation {
-    display: flex;
-  }
-  .navigation li {
-    display: block; /* change state in small view */
-    flex: 1 1 auto;
-  }
-  .navigation a {
-    text-align: center;
-  }
-  .navigation li:first-child {
-    display: none;
-  }
+#heroimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  height: 200px;
+  width: 100%;
+}
+
+#articleimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#mapimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.fivedayforcastimg {
+  display: none;
+}
+
+.fulltext {
+  display: block;
+}
+.summarytext {
+  display: none;
+}
+
+#forecasttitle {
+  border: 5px solid black;
+  border-bottom: none;
+  padding: 20px 20px 20px 20px;
+  background-color: #f55355;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#forecast {
+  margin-top: 0px;
+  padding: 20px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+}
+
+footer {
+  background-color: #f55355;
+  color: #23001e;
+}
+#footertext {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }

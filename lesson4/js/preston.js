@@ -1,22 +1,18 @@
-function updateDates() {
+function doOnload() {
 
     const d = new Date();
 
-    const currentYear = d.getFullYear();
+    document.getElementById("date").innerHTML = d;
 
-    const modified = document.lastModified
+    const menu1button = document.querySelector('.menu1');
+    const mainnav = document.querySelector('.navigation')
 
-    document.getElementById('lastmod').textContent = modified;
-    document.querySelector('#currentYear').textContent = currentYear;
+    menu1button.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+
+    window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
+
 }
 
-window.onload = updateDates;
+window.onload = doOnload;
 
 
-const menu1button = document.querySelector('.menu1');
-const mainnav = document.querySelector('.navigation')
-
-menu1button.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
-
-// To solve the mid resizing issue with responsive class on
-window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
