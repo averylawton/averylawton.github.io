@@ -133,9 +133,6 @@ p.colored {
   background-color: var(--paragraph-background-color);
   color: white;
 }
-.colors {
-  margin: auto;
-}
 
 /* end color scheme-------------------------------------------------------------------------------------- */
 
