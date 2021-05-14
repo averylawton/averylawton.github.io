@@ -78,11 +78,16 @@ nav {
   width: 100%;
 }
 
-#articleimage {
+#articleimagesmall {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 80%;
+  height: 150px;
+}
+
+#articleimagebig {
+  display: none;
 }
 
 .fivedayforcastimg {
@@ -121,12 +126,18 @@ footer {
   padding: 20px 20px 20px 20px;
 }
 
-#mapimage {
+#mapimagesmall {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 80%;
+  height: 150px;
 }
+
+#mapimagebig {
+  display: none;
+}
+
 #socialmedialinks {
   display: none;
 }

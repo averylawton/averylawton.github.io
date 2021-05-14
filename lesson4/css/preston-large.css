@@ -94,11 +94,24 @@
   }
 
   #forecast {
-    background-color: red;
+    margin-bottom: 20px;
+  }
+
+  #articlecontainer {
+    display: block;
     position: relative;
   }
-  #articleimage {
+
+  #articleimagebig {
+    display: block;
     float: right;
+    position: relative;
+    height: 170px;
+    width: 500px;
+  }
+
+  #articleimagesmall {
+    display: none;
   }
 
   footer {
@@ -107,15 +120,26 @@
     margin: auto;
   }
   #footertext {
-    text-align: right;
+    text-align: left;
   }
 
-  #mapimage {
+  #footercontainer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #mapimagebig {
     display: block;
     margin-left: 0%;
     margin-right: none;
     width: 50%;
+    margin-top: 20px;
   }
+
+  #mapimagesmall {
+    display: none;
+  }
+
   #socialmedialinks {
     display: inline;
     float: right;
