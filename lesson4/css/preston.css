@@ -127,3 +127,6 @@ footer {
   margin-right: auto;
   width: 50%;
 }
+#socialmedialinks {
+  display: none;
+}
