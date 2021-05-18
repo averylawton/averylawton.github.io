@@ -14,7 +14,7 @@ button.onclick = function() {
     listItem.appendChild(listText);
     listText.textContent = myChapter;
     listItem.appendChild(listBtn);
-    listBtn.textContent = 'Delete';
+    listBtn.textContent = document.write('&euro;');
     list.appendChild(listItem);
 
     listBtn.onclick = function(e) {
