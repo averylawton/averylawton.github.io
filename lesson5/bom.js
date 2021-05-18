@@ -4,7 +4,7 @@ const input = document.querySelector('input');
 const button = document.querySelector('button');
 
 button.onclick = function() {
-    let myItem = input.value;
+    let myChapter = input.value;
     input.value = '';
 
     const listItem = document.createElement('li');
@@ -12,7 +12,7 @@ button.onclick = function() {
     const listBtn = document.createElement('button');
 
     listItem.appendChild(listText);
-    listText.textContent = myItem;
+    listText.textContent = myChapter;
     listItem.appendChild(listBtn);
     listBtn.textContent = 'Delete';
     list.appendChild(listItem);
