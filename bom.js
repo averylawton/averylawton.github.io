@@ -4,9 +4,9 @@ const input = document.querySelector('input');
 const button = document.querySelector('button');
 
 button.onclick = function() {
-
+    
     let myChapter = input.value;
-
+    input.value = '';
     // check if input is not blank
     if (myChapter == null || myChapter == "") {
       return;
@@ -41,6 +41,6 @@ button.onclick = function() {
     input.focus();
 
     // i. clean up the successful add of a chapter by changing the input to nothing or the empty string and setting the focus to the input.
-    input.value = '';
+    
 
   }
