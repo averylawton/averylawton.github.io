@@ -1,14 +1,9 @@
 
 function doOnload() {
 
-   // const d = new Date();
-
-   // document.getElementById("date").innerHTML = d;
-//new date not working
-   const datefield = document.querySelector(".date");
-   const now = new Date();
-   const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
-   datefield.innerHTML = `${fulldate}`;
+    const d = new Date();
+    const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(d);
+    document.getElementById("date").innerHTML = `${fulldate}`;
 
     const menu1button = document.querySelector('.menu1');
     const mainnav = document.querySelector('.navigation')
