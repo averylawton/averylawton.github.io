@@ -31,16 +31,15 @@ h3 {
 
 nav {
   display: block;
-  position: fixed;
-  top: 10px; /** NOTE: decrease The pixels if want less space */
-  right: 10px; /** NOTE: Change This line */
-
+  position: relative;
   margin: 0 auto;
   max-width: 760px;
   background-color: #f55355;
   font-family: "Courier New", Courier, monospace;
   justify-content: center;
+  white-space: nowrap;
 }
+
 .navigation {
   list-style: none;
   padding: 0;
@@ -55,7 +54,7 @@ nav {
 .navigation a {
   display: block;
   padding: 0.75rem;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   color: #23001e;
   font-weight: 700;
@@ -63,6 +62,11 @@ nav {
 .navigation a:hover {
   color: #f55355;
   background-color: #23001e;
+}
+
+.active {
+  background: #c22e30;
+  text-decoration: underline;
 }
 
 .responsive li {

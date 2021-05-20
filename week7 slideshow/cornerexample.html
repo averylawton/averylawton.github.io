@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style> 
+            #roundedcorners {
+            border-radius: 25px;
+            background: #73AD21;
+            padding: 20px; 
+            width: 200px;
+            height: 150px;  
+            }
+
+            #mixedcorners {
+            border-radius:5px 30px 30px 5px;
+            border: 2px solid #73AD21;
+            padding: 20px; 
+            width: 200px;
+            height: 150px;  
+            }
+
+            #imagecorners {
+            border-radius: 25px;
+            background: url(images/pink-clouds.png);
+            background-position: left top;
+            background-repeat: repeat;
+            padding: 20px; 
+            width: 200px;
+            height: 150px;  
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>The border-radius Property</h1>
+
+        <p>Rounded corners for an element with a specified background color:</p>
+        <p id="roundedcorners">Rounded corners!</p>
+        <p>Rounded corners for an element with a border:</p>
+        <p id="mixedcorners">Rounded and square corners!</p>
+        <p>Rounded corners used on an element with a background picture:</p>
+        <p id="imagecorners">Rounded corners on an image!</p>
+
+    </body>
+</html>
