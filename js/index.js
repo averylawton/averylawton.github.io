@@ -9,6 +9,15 @@ function updateDates() {
 
     document.getElementById('lastmod').textContent = modified;
     document.querySelector('#currentYear').textContent = currentYear;
+
+    WebFont.load({
+        google: {
+          families: [
+             'sans-serif typeface'
+          ]
+        }
+      });
+
 }
 
 window.onload = updateDates;
