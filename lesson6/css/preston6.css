@@ -127,20 +127,6 @@ nav {
   margin: 10px;
 }
 
-#forecastimgtitle1 {
-  padding-left: 20px;
-}
-#forecastimgtitle2 {
-  padding-right: 20px;
-}
-
-#forecastimg1 {
-  padding-left: 20px;
-}
-#forecastimg2 {
-  padding-right: 20px;
-}
-
 #forecastimagesdegrees {
   display: flex;
   background-color: #f55355;
