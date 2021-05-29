@@ -3,20 +3,21 @@
   grid-template-columns: 1fr;
 }
 
-#blueflowers {
+.out-view {
+  border-color: rgb(161, 161, 187);
+  border-radius: 5px;
+  border-style: solid;
+  transform: translateY(50px);
+  opacity: 0.5;
+  transition: transform 2s, opacity 4s;
 }
 
-#bookstore {
-}
-
-#cavern {
-}
-
-#sky {
-}
-
-#fruitonchair {
-}
-
-#train {
+.in-view {
+  border-color: rgb(59, 58, 58);
+  border-width: 5px;
+  border-radius: 10px;
+  border-style: solid;
+  transform: none;
+  opacity: 1;
+  transition: transform 2s, opacity 4s;
 }

@@ -9,7 +9,25 @@
       img.src = src;
   }
 
-  const imgOptions = {};
+
+  function buildThresholdList() {
+    let thresholds = [];
+    let numSteps = 5;
+  
+    for (let i=1.0; i<=numSteps; i++) {
+      let ratio = i/numSteps;
+      thresholds.push(ratio);
+    }
+  
+    thresholds.push(0);
+    return thresholds;
+  };
+
+  const imgOptions = {
+      threshold: 0,
+      //rootMargin: buildThresholdList()
+    rootMargin: "0px 0px -300px 0px"
+  };
 
   const imgObserver = new IntersectionObserver((entries,
     imgObserver) => {
@@ -18,12 +36,14 @@
                 return;
             } 
             else{
-                preloadImage(entry.target);
+                preloadImg(entry.target);
+                entry.target.classList.remove('out-view');
+                entry.target.classList.add('in-view');
                 imgObserver.unobserve(entry.target);
             }
         })
     }, imgOptions);
 
-    images.forEach(image =>{
+    imgs.forEach(image =>{
         imgObserver.observe(image);
     });
