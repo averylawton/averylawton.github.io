@@ -3,15 +3,15 @@
  <head>
      <meta charset="utf-8">
     
-     <title>Preston</title>
+     <title>Image Gallery</title>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-     <script src="js/gallery-7.js"></script>
+     <script src="js/preston7.js"></script>
      
-     <link rel="stylesheet" href="css/lazyload.css">
-     <link rel="stylesheet" href="lesson6/css/preston6.css">
-     <link rel="stylesheet" href="">
-     <link rel="stylesheet" href="">       
+     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/preston7.css">
+     <link rel="stylesheet" href="css/preston-medium7.css">
+     <link rel="stylesheet" href="css/preston-large7.css">          
  </head>
 
  <body>
@@ -32,81 +32,111 @@
             <ul class="navigation">
                 <li><a class="menu1" href="#">Menu</a></li>
                 <li><a href="#">Home</a></li>
-                <li><a class="active" href="preston-5.html">Preston</a></li>
+                <li><a href="../lesson6/preston-6.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a class="active" href="gallery-7.html">Gallery</a></li>
             </ul>
         </nav>
      </div>
-     <main>
+     <main class="wrapper">
+        <div class="imgwrapper">
         <img
         src="images/placeholderimg.png"
         data-src="images/stormfromabove.jpg"
         alt="cavern"
         class="out-view"
         />
-        <img
+        <div class="imgtext">
+            Hurricane Storm Clouds
+        </div>
+    </div>
+    <div class="imgwrapper">
+    <img
         src="images/placeholderimg.png"
         data-src="images/bluelightning.jpg"
         alt="cavern"
         class="out-view"
         />
+        <div class="imgtext">Lightning Strike</div>
+        
+    </div>
+    <div class="imgwrapper">
         <img
         src="images/placeholderimg.png"
         data-src="images/countrystorm.jpg"
         alt="cavern"
         class="out-view"
         />
+        <div class="imgtext">Funnel Cloud</div>
+        
+    </div>
+    <div class="imgwrapper">
         <img
         src="images/placeholderimg.png"
         data-src="images/cloudsandwater.jpg"
         alt="cavern"
         class="out-view"
         />
+        <div class="imgtext">Ship at Sea</div>
+        
+    </div>
+    <div class="imgwrapper">
         <img
         src="images/placeholderimg.png"
         data-src="images/tallclouds.jpg"
         alt="cavern"
         class="out-view"
         />
+        <div class="imgtext">Tall Clouds</div>
+        
+    </div>
+    <div class="imgwrapper">
         <img
         src="images/placeholderimg.png"
         data-src="images/stormoverfeild.jpg"
         alt="cavern"
         class="out-view"
         />
+        <div class="imgtext">Lighting Over Trail</div>
+        
+    </div>
+    <div class="imgwrapper">
         <img
         src="images/placeholderimg.png"
         data-src="images/umbrella.jpg"
         alt="cavern"
         class="out-view"
         />
+        <div class="imgtext">Red Umbrella</div>
+        
+    </div>
+    <div class="imgwrapper">
         <img
         src="images/placeholderimg.png"
         data-src="images/flood.jpg"
         alt="cavern"
         class="out-view"
         />
+        <div class="imgtext">Flooding River</div>
+        
+    </div>
+    <div class="imgwrapper">
         <img
         src="images/placeholderimg.png"
         data-src="images/rainyroad.jpg"
         alt="cavern"
         class="out-view"
         />
-
+        <div class="imgtext">Misty Road</div>
+        
+    </div>
      </main>
      <footer>
 
 
 			<div id="footercontainer">
-			<img
-            src="images/map-car.jpg"
-            alt="place holder image"
-            id="mapimagebig"
-            />
-
             <div id="footertext">
             <h3>Contact Information</h3>
             <p>
@@ -115,6 +145,7 @@
             </p>
             
 			<div id="socialmedialinks">
+                
                 <a href="#">
                     <img
                     src="images/facebook-icon.png"
@@ -123,6 +154,7 @@
                     width="60"
                     /> 
                 </a>
+                
                 <a href="#">
                     <img
                     src="images/insta-icon.png"
@@ -131,6 +163,7 @@
                     width="60"
                     /> 
                 </a>
+
                 <a href="#">
                     <img
                     src="images/pin-icon.png"
@@ -151,8 +184,12 @@
             <p>
                 Current date: <span id="date"></span>
             </p>
+            <p>
+                <span id="lastvisit"></span>
+            </p>
         </div>
      </footer>
+     <script src="js/gallery-7.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
      <script>
      WebFont.load({
