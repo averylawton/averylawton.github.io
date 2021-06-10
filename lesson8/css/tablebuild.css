@@ -1,0 +1,44 @@
+body {
+  max-width: 450px;
+  margin: auto;
+}
+table {
+  background-color: #e7ffed;
+  box-shadow: 10px 10px 8px #628ca6;
+  margin: auto;
+  margin-top: 50px;
+}
+
+table,
+th,
+td {
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
+
+th {
+  background-color: #628ca6;
+  color: white;
+}
+
+caption {
+  font-size: large;
+  font-family: Ubuntu, sans-serif;
+  font-weight: bold;
+  background-color: #7fb9c2;
+  padding: 10px 5px 5px 5px;
+}
+
+.grayboxes {
+  background-color: #e7f0ed;
+}
+tfoot {
+  background-color: #7fb9c2;
+  font-size: small;
+  justify-self: center;
+}
