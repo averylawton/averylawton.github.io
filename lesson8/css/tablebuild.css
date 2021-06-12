@@ -12,16 +12,23 @@ table {
 table,
 th,
 td {
+  font-family: Ubuntu, sans-serif;
+  padding: 5px;
+  text-align: center;
   border: 1px solid lightgray;
   border-collapse: collapse;
 }
-th,
-td {
-  padding: 5px;
-  text-align: left;
-}
 
 th {
+  background-color: #628ca6;
+  color: white;
+}
+
+tr:nth-child(5) td:nth-child(1) {
+  font-style: italic;
+}
+
+tr:nth-child(4) td:nth-child(3) {
   background-color: #628ca6;
   color: white;
 }

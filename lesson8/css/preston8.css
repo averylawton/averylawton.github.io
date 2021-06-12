@@ -98,3 +98,34 @@ footer {
 }
 
 /************************************week 8 additions***************************************************/
+
+#wrapper {
+  font-family: "Courier New", Courier, monospace;
+}
+
+fieldset,
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+.container {
+  width: 500px;
+  clear: both;
+}
+
+.container input {
+  width: 100%;
+  clear: both;
+}
+
+/****************************************thank you css**************************************************/
+
+#thankyoutext {
+  background-color: #f55355;
+  padding: 20px 20px 20px 20px;
+  margin: 20px 0px 20px 0px;
+}
