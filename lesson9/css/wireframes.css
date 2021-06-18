@@ -85,6 +85,39 @@ footer {
   font-family: "Courier New", Courier, monospace;
 }
 
+#largewireframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border: solid;
+  border-radius: 5px;
+  border-color: black;
+  margin: 10px 10px 10px 10px;
+}
+
+#mediumwireframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: solid;
+  border-radius: 5px;
+  border-color: black;
+  margin: 10px 10px 10px 10px;
+}
+
+#smallwireframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border: solid;
+  border-radius: 5px;
+  border-color: black;
+  margin: 10px 10px 10px 10px;
+}
+
 @media only screen and (min-width: 60em) {
   #navwrapper {
     margin: 0 auto;
@@ -136,38 +169,5 @@ footer {
   #socialmedialinks {
     display: inline;
     float: right;
-  }
-
-  #largewireframe {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border: solid;
-    border-radius: 5px;
-    border-color: black;
-    margin: 10px 10px 10px 10px;
-  }
-
-  #mediumwireframe {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border: solid;
-    border-radius: 5px;
-    border-color: black;
-    margin: 10px 10px 10px 10px;
-  }
-
-  #smallwireframe {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border: solid;
-    border-radius: 5px;
-    border-color: black;
-    margin: 10px 10px 10px 10px;
   }
 }
