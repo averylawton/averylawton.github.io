@@ -1,0 +1,130 @@
+/************************************** small view *******************************************/
+
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); */
+
+body {
+  background-color: #fffbee;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.logo-box {
+  border-radius: 55px;
+  float: left;
+  margin-left: auto;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  font-family: "montserrat";
+  margin-top: 40px;
+}
+h2 {
+  font-family: "montserrat";
+  text-align: center;
+}
+h3 {
+  font-family: "montserrat";
+}
+
+nav {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 760px;
+  background-color: #f55355;
+  font-family: "Courier New", Courier, monospace;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: #23001e;
+  font-weight: 700;
+}
+.navigation a:hover {
+  color: #f55355;
+  background-color: #23001e;
+}
+
+.active {
+  background: #c22e30;
+  text-decoration: underline;
+}
+
+.responsive li {
+  display: block;
+}
+
+/************************week 9 additions*************************/
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+section {
+  border: solid 3px black;
+  margin: 3px 3px 3px 3px;
+  padding: 4px 4px 4px 4px;
+  background-color: #23001e;
+  color: white;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+img {
+  align-self: center;
+  max-width: 300px;
+}
+h4 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.article {
+  text-align: center;
+  border: solid black 3px;
+  margin-bottom: 10px;
+}
+
+#heroimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 620px;
+}
+
+/**************************end of week 9****************************/
+
+footer {
+  background-color: #f55355;
+  color: #23001e;
+}
+#footertext {
+  padding: 20px 20px 20px 20px;
+}
+
+#footerbar {
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 10px;
+  border-top: 5px solid black;
+}
