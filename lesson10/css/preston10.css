@@ -1,0 +1,153 @@
+/************************************** small view *******************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  background-color: #fffbee;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.logo-box {
+  border-radius: 55px;
+  float: left;
+  margin-left: auto;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  font-family: "montserrat";
+  margin-top: 40px;
+}
+h2 {
+  font-family: "montserrat";
+}
+h3 {
+  font-family: "montserrat";
+}
+
+nav {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 760px;
+  background-color: #f55355;
+  font-family: "Courier New", Courier, monospace;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: #23001e;
+  font-weight: 700;
+}
+.navigation a:hover {
+  color: #f55355;
+  background-color: #23001e;
+}
+
+.active {
+  background: #c22e30;
+  text-decoration: underline;
+}
+
+.responsive li {
+  display: block;
+}
+
+#heroimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  height: 200px;
+  width: 100%;
+}
+
+#articleimagesmall {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 150px;
+}
+
+#articleimagebig {
+  display: none;
+}
+
+.fivedayforcastimg {
+  display: none;
+}
+.fivedayforcastimgtitle {
+  display: none;
+}
+.fivedayforcastimgdegrees {
+  display: none;
+}
+
+.fulltext {
+  display: block;
+}
+.summarytext {
+  display: none;
+}
+
+#forecasttitle {
+  border: 5px solid black;
+  border-bottom: none;
+  padding: 20px 20px 20px 20px;
+  background-color: #f55355;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#forecast {
+  margin-top: 0px;
+  padding: 20px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+}
+
+footer {
+  background-color: #f55355;
+  color: #23001e;
+}
+#footertext {
+  padding: 20px 20px 20px 20px;
+}
+
+#mapimagebig {
+  display: none;
+}
+
+/************************************week 5 additions***************************************************/
+
+.fridayannouncement {
+  background-color: #f55355;
+  text-align: center;
+}
+#footerbar {
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 10px;
+  border-top: 5px solid black;
+}
