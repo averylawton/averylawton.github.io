@@ -1,6 +1,6 @@
 /************************************** small view *******************************************/
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); */
 
 body {
   background-color: #fffbee;
@@ -78,7 +78,6 @@ nav {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  height: 200px;
   width: 100%;
 }
 
@@ -95,13 +94,56 @@ nav {
 }
 
 .fivedayforcastimg {
-  display: none;
+  width: 50px;
+  height: 50px;
+  display: block;
+  flex: 0 0 auto;
+  margin: 10px;
 }
+
+#forecastimages {
+  display: flex;
+  background-color: #f55355;
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+#forecastimagestitles {
+  display: flex;
+  background-color: #f55355;
+  height: 20px;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
 .fivedayforcastimgtitle {
-  display: none;
+  width: 50px;
+  height: 20px;
+  display: block;
+  flex: 0 0 auto;
+  margin: 10px;
+  text-align: center;
 }
+
+#forecastimagesdegrees {
+  display: flex;
+  background-color: #f55355;
+  height: 30px;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
 .fivedayforcastimgdegrees {
-  display: none;
+  width: 50px;
+  height: 20px;
+  display: block;
+  flex: 0 0 auto;
+  margin: 0px 10px 0px 10px;
+  text-align: center;
 }
 
 .fulltext {
@@ -109,15 +151,6 @@ nav {
 }
 .summarytext {
   display: none;
-}
-
-#forecasttitle {
-  border: 5px solid black;
-  border-bottom: none;
-  padding: 20px 20px 20px 20px;
-  background-color: #f55355;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 #forecast {
