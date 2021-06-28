@@ -1,0 +1,173 @@
+/************************************** small view *******************************************/
+
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); */
+
+body {
+  background-color: #fffbee;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.logo-box {
+  border-radius: 55px;
+  float: left;
+  margin-left: auto;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  font-family: "montserrat";
+  margin-top: 40px;
+}
+h2 {
+  font-family: "montserrat";
+}
+h3 {
+  font-family: "montserrat";
+}
+
+nav {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 760px;
+  background-color: #f55355;
+  font-family: "Courier New", Courier, monospace;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: #23001e;
+  font-weight: 700;
+}
+.navigation a:hover {
+  color: #f55355;
+  background-color: #23001e;
+}
+
+.active {
+  background: #c22e30;
+  text-decoration: underline;
+}
+
+.responsive li {
+  display: block;
+}
+
+footer {
+  background-color: #f55355;
+  color: #23001e;
+}
+#footertext {
+  padding: 20px 20px 20px 20px;
+}
+
+#wrapper {
+  font-family: "Courier New", Courier, monospace;
+}
+
+#largewireframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border: solid;
+  border-radius: 5px;
+  border-color: black;
+  margin: 10px 10px 10px 10px;
+}
+
+#mediumwireframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: solid;
+  border-radius: 5px;
+  border-color: black;
+  margin: 10px 10px 10px 10px;
+}
+
+#smallwireframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border: solid;
+  border-radius: 5px;
+  border-color: black;
+  margin: 10px 10px 10px 10px;
+}
+
+@media only screen and (min-width: 60em) {
+  #navwrapper {
+    margin: 0 auto;
+    background-color: #f55355;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  nav {
+    position: unset;
+    top: auto;
+    right: auto;
+    position: sticky;
+  }
+
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  footer {
+    clear: both;
+    max-width: 1100px;
+    margin: auto;
+  }
+  #footertext {
+    text-align: left;
+  }
+
+  #footercontainer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #socialmedialinks {
+    display: inline;
+    float: right;
+  }
+}
