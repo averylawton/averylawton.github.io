@@ -1,3 +1,5 @@
+
+
 function doOnload() {
 	const d = new Date();
 	const fulldate = new Intl.DateTimeFormat("en-US", {
@@ -34,6 +36,16 @@ function doOnload() {
 				"Your last visit to our site was " + numberOfDays + " days ago.";
 		}
 	}
+    
+
+    WebFont.load({
+        google: {
+          families: [
+             'Montserrat'
+          ]
+        }
+      });
+
 }
 //________________________________________________________________________________________________________//
 window.onload = doOnload;
