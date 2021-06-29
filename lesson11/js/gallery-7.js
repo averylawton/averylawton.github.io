@@ -51,6 +51,4 @@ if (localStorage) {
     } 
   
     
-    localStorage.setItem('lastVisit', (new Date()).getTime());
-    document.getElementById("lastvisit").innerHTML = `${lastVisitMessage}`;
   }
