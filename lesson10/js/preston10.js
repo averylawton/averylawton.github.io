@@ -24,8 +24,10 @@ function doOnload() {
         //do not display
         document.getElementById("fridayalert").style.display = "none";
     }
+
 }
 //________________________________________________________________________________________________________//
+
 window.onload = doOnload;
 
 

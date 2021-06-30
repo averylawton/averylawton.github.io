@@ -35,6 +35,9 @@ function doOnload() {
 			lastVisitMessage =
 				"Your last visit to our site was " + numberOfDays + " days ago.";
 		}
+
+        localStorage.setItem('lastVisit', (new Date()).getTime());
+        document.getElementById("lastvisit").innerHTML = `${lastVisitMessage}`;
 	}
     
 

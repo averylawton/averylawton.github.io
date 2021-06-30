@@ -23,14 +23,12 @@ var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
   fetch(forecastAPIURL)
     .then((response) => response.json())
     .then((jsObject) => {
-      console.log(jsObject);
         const forecastList = jsObject['list'];
 
         var dayCounter = 0;
         forecastList.forEach(
             element => {
                 var dateText = element.dt_txt;
-                console.log(dateText);
 
                 if (dateText != undefined && dateText != null && dateText.includes("18:00")) {
                     dayCounter++;
