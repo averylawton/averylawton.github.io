@@ -184,3 +184,6 @@ footer {
   padding: 10px 0px 10px 10px;
   border-top: 5px solid black;
 }
+#cityID {
+  display: none;
+}
