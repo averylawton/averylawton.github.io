@@ -1,0 +1,423 @@
+/************************************** small view *******************************************/
+
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); */
+
+body {
+  background-color: #fffbee;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.logo-box {
+  border-radius: 55px;
+  float: left;
+  margin-left: auto;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  font-family: "montserrat";
+  margin-top: 40px;
+}
+h2 {
+  font-family: "montserrat";
+}
+h3 {
+  font-family: "montserrat";
+}
+
+nav {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 760px;
+  background-color: #f55355;
+  font-family: "Courier New", Courier, monospace;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: #23001e;
+  font-weight: 700;
+}
+.navigation a:hover {
+  color: #f55355;
+  background-color: #23001e;
+}
+
+.active {
+  background: #c22e30;
+  text-decoration: underline;
+}
+
+.responsive li {
+  display: block;
+}
+
+#heroimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#articleimagesmall {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 150px;
+}
+
+#articleimagebig {
+  display: none;
+}
+
+.fivedayforcastimg {
+  width: 50px;
+  height: 50px;
+  display: block;
+  flex: 0 0 auto;
+  margin: 10px;
+}
+
+#forecastimages {
+  display: flex;
+  background-color: #f55355;
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+#forecastimagestitles {
+  display: flex;
+  background-color: #f55355;
+  height: 20px;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.fivedayforcastimgtitle {
+  width: 50px;
+  height: 20px;
+  display: block;
+  flex: 0 0 auto;
+  margin: 10px;
+  text-align: center;
+}
+
+#forecastimagesdegrees {
+  display: flex;
+  background-color: #f55355;
+  height: 30px;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.fivedayforcastimgdegrees {
+  width: 50px;
+  height: 20px;
+  display: block;
+  flex: 0 0 auto;
+  margin: 0px 10px 0px 10px;
+  text-align: center;
+}
+
+.fulltext {
+  display: block;
+}
+.summarytext {
+  display: none;
+}
+
+#forecast {
+  margin-top: 0px;
+  padding: 20px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+}
+
+footer {
+  background-color: #f55355;
+  color: #23001e;
+}
+#footertext {
+  padding: 20px 20px 20px 20px;
+}
+
+#mapimagebig {
+  display: none;
+}
+
+/************************************week 5 additions***************************************************/
+
+.fridayannouncement {
+  background-color: #f55355;
+  text-align: center;
+}
+#footerbar {
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 10px;
+  border-top: 5px solid black;
+}
+#cityID {
+  display: none;
+}
+
+@media only screen and (min-width: 42em) {
+  #navwrapper {
+    margin: 0 auto;
+    background-color: #f55355;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  nav {
+    position: unset;
+    top: auto;
+    right: auto;
+    /*position: sticky;*/
+  }
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+
+  main {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  footer {
+    max-width: 700px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  #navwrapper {
+    margin: 0 auto;
+    background-color: #f55355;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  nav {
+    position: unset;
+    top: auto;
+    right: auto;
+    position: sticky;
+  }
+
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  /*.fivedayforcastimg {
+    width: 50px;
+    height: 50px;
+    display: block;
+    flex: 0 0 auto;
+    margin: 10px;
+  }
+
+  #forecastimages {
+    display: flex;
+    background-color: #f55355;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+
+  #forecastimagestitles {
+    display: flex;
+    background-color: #f55355;
+    height: 20px;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+
+  .fivedayforcastimgtitle {
+    width: 50px;
+    height: 20px;
+    display: block;
+    flex: 0 0 auto;
+    margin: 10px;
+  }
+
+  #forecastimgtitle1 {
+    padding-left: 20px;
+  }
+  #forecastimgtitle2 {
+    padding-right: 20px;
+  }
+
+  #forecastimg1 {
+    padding-left: 20px;
+  }
+  #forecastimg2 {
+    padding-right: 20px;
+  }
+
+  #forecastimagesdegrees {
+    display: flex;
+    background-color: #f55355;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .fivedayforcastimgdegrees {
+    width: 50px;
+    height: 50px;
+    display: block;
+    flex: 0 0 auto;
+    margin-bottom: 10px;
+  }
+
+  #forecastimgdegree1 {
+    padding-left: 40px;
+  }
+  #forecastimgdegree2 {
+    padding-right: 20px;
+  }
+*/
+  #herosection {
+    position: relative;
+  }
+
+  #herosection {
+    font-size: 11px;
+  }
+
+  #weathersummary {
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 150px;
+    width: 150px;
+    background-color: #f55355;
+    border-style: solid;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+
+  .fulltext {
+    display: none;
+  }
+  .summarytext {
+    display: block;
+  }
+
+  #forecasttitle {
+    border: none;
+    background-color: transparent;
+  }
+
+  #forecast {
+    margin-bottom: 20px;
+  }
+
+  #articlecontainer {
+    display: block;
+    position: relative;
+  }
+
+  #articleimagebig {
+    display: block;
+    float: right;
+    position: relative;
+    height: 170px;
+    width: 500px;
+  }
+
+  #articleimagesmall {
+    display: none;
+  }
+
+  footer {
+    clear: both;
+    max-width: 1100px;
+    margin: auto;
+  }
+  #footertext {
+    text-align: left;
+  }
+
+  #footercontainer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #mapimagebig {
+    display: block;
+    margin-left: 0%;
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  #mapimagesmall {
+    display: none;
+  }
+
+  #socialmedialinks {
+    display: inline;
+    float: right;
+  }
+}

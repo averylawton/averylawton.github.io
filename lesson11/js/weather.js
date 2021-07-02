@@ -10,12 +10,11 @@ function windChill(tempF, speed) {
 var cityID = document.querySelector("#cityID").innerHTML;
 
 const weatherAPIURL =
-  "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=405e35a9857a939685eb2aa43e7679ae&units=imperial";
+  "https://api.openweathermap.org/data/2.5/weather?id=" + cityID + "&appid=405e35a9857a939685eb2aa43e7679ae&units=imperial";
 
 fetch(weatherAPIURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
     const main = jsObject["main"];
     const wind = jsObject["wind"];
     const weather = jsObject["weather"];
@@ -44,13 +43,11 @@ var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 fetch(forecastAPIURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
     const forecastList = jsObject["list"];
 
     var dayCounter = 0;
     forecastList.forEach((element) => {
       var dateText = element.dt_txt;
-      console.log(dateText);
 
       if (
         dateText != undefined &&

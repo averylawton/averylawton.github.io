@@ -113,8 +113,6 @@ h4 {
   max-width: 620px;
 }
 
-/**************************end of week 9****************************/
-
 footer {
   background-color: #f55355;
   color: #23001e;
@@ -127,4 +125,168 @@ footer {
   margin: 10px 0px 10px 0px;
   padding: 10px 0px 10px 10px;
   border-top: 5px solid black;
+}
+
+@media only screen and (min-width: 42em) {
+  #navwrapper {
+    margin: 0 auto;
+    background-color: #f55355;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  nav {
+    position: unset;
+    top: auto;
+    right: auto;
+    /*position: sticky;*/
+  }
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+
+  /************************week 9 additions*************************/
+
+  main {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  img {
+    grid-column: 2;
+  }
+
+  section:nth-child(odd) .infotext {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  section:nth-child(odd) img {
+    grid-column: 1;
+  }
+
+  #heroimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    max-width: none;
+    width: 100%;
+  }
+
+  /**************************end of week 9****************************/
+  footer {
+    max-width: 700px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  #navwrapper {
+    margin: 0 auto;
+    background-color: #f55355;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  nav {
+    position: unset;
+    top: auto;
+    right: auto;
+    position: sticky;
+  }
+
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+  img {
+    grid-column: 1;
+    justify-self: center;
+  }
+
+  /************************week 9 additions*************************/
+
+  main {
+    max-width: 1100px;
+    margin: auto;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  img {
+    max-width: 280px;
+    margin-bottom: 10px;
+  }
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  section:nth-child(odd) .infotext {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  section:nth-child(odd) img {
+    grid-column: 1;
+  }
+
+  #heroimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    max-width: none;
+    width: 100%;
+  }
+
+  /**************************end of week 9****************************/
+
+  footer {
+    clear: both;
+    max-width: 1100px;
+    margin: auto;
+  }
+  #footertext {
+    text-align: left;
+  }
+
+  #footercontainer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #socialmedialinks {
+    display: inline;
+    float: right;
+  }
 }
