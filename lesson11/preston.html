@@ -1,249 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-     <meta charset="utf-8">
-    
-     <title>Preston</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-     <link rel="stylesheet" href="css/normalize.css">
-     <link rel="stylesheet" href="css/city-pages.css">      
- </head>
- <body>
-  
-    <div id="fridayalert">
-        <p style="background-color: #f55355;">
-            Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
-        </p>
-     </div>
-     <header>
-            <img
-            src="images/logo-small.jpg"
-            alt="Logo image"
-            width="100"
-            class="logo-box"
-            />
-         <h1>Weather Ahead</h1>
-         <p>keeping in touch with the sky since 2021</p>
-     </header>
+  <head>
+    <meta charset="utf-8" />
 
-     <div id="navwrapper">
-        <nav>
-          <ul class="navigation">
-            <li><a class="menu1" href="#">Menu</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="preston.html">Preston</a></li>
-            <li><a href="sodasprings.html">Soda Springs</a></li>
-            <li><a href="fishhaven.html">Fish Haven</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-          </ul>
-        </nav>
+    <title>Preston</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/city-pages.css" />
+  </head>
+  <body>
+    <div id="fridayalert">
+      <p style="background-color: #f55355">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+        park pavilion.
+      </p>
+    </div>
+    <header>
+      <img
+        src="images/logo-small.jpg"
+        alt="Logo image"
+        width="100"
+        class="logo-box"
+      />
+      <h1>Weather Ahead</h1>
+      <p>keeping in touch with the sky since 2021</p>
+    </header>
+
+    <div id="navwrapper">
+      <nav>
+        <ul class="navigation">
+          <li><a class="menu1" href="#">Menu</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="preston.html">Preston</a></li>
+          <li><a href="sodasprings.html">Soda Springs</a></li>
+          <li><a href="fishhaven.html">Fish Haven</a></li>
+          <li><a href="stormcenter.html">Storm Center</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <h1 id="community">Preston, ID</h1>
+      <div id="herosection">
+        <img src="images/week9heroimg.jpg" alt="Logo image" id="heroimage" />
+
+        <div id="weathersummary">
+          <h2>weather summary</h2>
+          <p class="summarytext">
+            Currently: <span id="currentCondition"></span> <br />
+            Temp: <span id="currentTemp"></span> F <br />
+            High: <span id="highTemp"></span> F <br />
+            Low: <span id="lowTemp"></span> F<br />
+            Wind Chill: <span id="windChill"></span> F <br />
+            Humidity: <span id="humidity"></span>% <br />
+            Wind speed: <span id="windSpeed"></span> mph <br />
+          </p>
+
+          <p class="fulltext">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </p>
+        </div>
       </div>
-     <main>
-         <h1 id="community">Preston, ID</h1> 
-        <div id="herosection">
-            <img
-            src="images/week9heroimg.jpg"
-            alt="Logo image"
-            id="heroimage"
+
+      <h2 id="forecasttitle">Five Day Forcast</h2>
+
+      <div id="forecastimagestitles">
+        <p class="fivedayforcastimgtitle" id="forecastimgtitle1">
+          <span id="dayOfWeek1"></span>
+        </p>
+        <p class="fivedayforcastimgtitle">
+          <span id="dayOfWeek2"></span>
+        </p>
+        <p class="fivedayforcastimgtitle">
+          <span id="dayOfWeek3"></span>
+        </p>
+        <p class="fivedayforcastimgtitle">
+          <span id="dayOfWeek4"></span>
+        </p>
+        <p class="fivedayforcastimgtitle" id="forecastimgtitle2">
+          <span id="dayOfWeek5"></span>
+        </p>
+      </div>
+
+      <div id="forecastimages">
+        <img
+          src="images/sunicon.png"
+          alt="place holder image"
+          class="fivedayforcastimg"
+          id="forecastimg1"
+        />
+        <img
+          src="images/sunicon.png"
+          alt="place holder image"
+          class="fivedayforcastimg"
+          id="forecastimg2"
+        />
+        <img
+          src="images/sunicon.png"
+          alt="place holder image"
+          class="fivedayforcastimg"
+          id="forecastimg3"
+        />
+        <img
+          src="images/sunicon.png"
+          alt="place holder image"
+          class="fivedayforcastimg"
+          id="forecastimg4"
+        />
+        <img
+          src="images/sunicon.png"
+          alt="place holder image"
+          class="fivedayforcastimg"
+          id="forecastimg5"
+        />
+      </div>
+
+      <div id="forecastimagesdegrees">
+        <p class="fivedayforcastimgdegrees" id="forecastimgdegree1">
+          <span id="forecastTemp1"></span>
+        </p>
+        <p class="fivedayforcastimgdegrees">
+          <span id="forecastTemp2"></span>
+        </p>
+        <p class="fivedayforcastimgdegrees">
+          <span id="forecastTemp3"></span>
+        </p>
+        <p class="fivedayforcastimgdegrees">
+          <span id="forecastTemp4"></span>
+        </p>
+        <p class="fivedayforcastimgdegrees" id="forecastimgdegree2">
+          <span id="forecastTemp5"></span>
+        </p>
+      </div>
+
+      <div id="townevents">
+        <h3 id="upcomingeventstitle">Upcoming events:</h3>
+      </div>
+
+      <div id="forecast">
+        <h3>Preston's Local Charm</h3>
+        <div id="articlecontainer">
+          <img
+            src="images/red-sunset.jpg"
+            alt="place holder image"
+            id="articleimagebig"
           />
 
-         <div id="weathersummary">
-            <h2>weather summary</h2>
-            <p class="summarytext">
-                Currently: <span id="currentCondition"></span> <br>
-                Temp: <span id="currentTemp"></span> F <br>
-                High: <span id="highTemp"></span> F <br>
-                Low: <span id="lowTemp"></span> F<br>
-                Wind Chill: <span id="windChill"></span> F <br>
-                Humidity: <span id="humidity"></span>% <br>
-                Wind speed: <span id="windSpeed"></span> mph <br>
-            </p>
-            
-            <p class="fulltext">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
-         </div>
-        </div>
+          <p>
+            Preston, ID is a beautiful place to visit any time of the year, but
+            it truly shines in the fall. As the weather cools, Preston remains
+            mild and comes to life with seasonal events that bring together
+            people from different places and different cultures for a truly
+            unique experience. With festivals, parks, and fairs on the calendar,
+            spend some of your autumn in Preston. Fall in Preston is beautiful
+            and exciting. Creativity and tradition flourish alongside history
+            and nature in this captivating town. Come and explore Preston this
+            fall with friends and family – discover something new regardless of
+            whether it is at an art festival or on a walk among the hills. 
+          </p>
 
-         <h2 id="forecasttitle">Five Day Forcast</h2>
-
-         <div id="forecastimagestitles">   
-            <p 
-            class="fivedayforcastimgtitle"
-             id="forecastimgtitle1"
-             >
-                <span id="dayOfWeek1"></span>
-            </p>
-            <p class="fivedayforcastimgtitle">
-                <span id="dayOfWeek2"></span>
-            </p>
-            <p class="fivedayforcastimgtitle">
-                <span id="dayOfWeek3"></span>
-            </p>
-            <p class="fivedayforcastimgtitle">
-                <span id="dayOfWeek4"></span>
-            </p>
-            <p 
-            class="fivedayforcastimgtitle"
-             id="forecastimgtitle2"
-             >
-             <span id="dayOfWeek5"></span>
-            </p>
-            </div>
-
-         <div id="forecastimages">   
-            <img
-               src="images/sunicon.png"
-               alt="place holder image"
-               class="fivedayforcastimg"
-               id="forecastimg1"
-            />
-            <img
-               src="images/sunicon.png"
-               alt="place holder image"
-               class="fivedayforcastimg"
-               id="forecastimg2"
-            />
-            <img
-               src="images/sunicon.png"
-               alt="place holder image"
-               class="fivedayforcastimg"
-               id="forecastimg3"
-            />
-            <img
-               src="images/sunicon.png"
-               alt="place holder image"
-               class="fivedayforcastimg"
-               id="forecastimg4"
-            />
-            <img
-               src="images/sunicon.png"
-               alt="place holder image"
-               class="fivedayforcastimg"
-               id="forecastimg5"
-            />
-        </div>
-
-        <div id="forecastimagesdegrees">   
-            <p 
-            class="fivedayforcastimgdegrees"
-             id="forecastimgdegree1"
-             >
-             <span id="forecastTemp1"></span>
-            </p>
-            <p class="fivedayforcastimgdegrees">
-                <span id="forecastTemp2"></span>
-            </p>
-            <p class="fivedayforcastimgdegrees">
-                <span id="forecastTemp3"></span>
-            </p>
-            <p class="fivedayforcastimgdegrees">
-                <span id="forecastTemp4"></span>
-            </p>
-            <p 
-            class="fivedayforcastimgdegrees"
-             id="forecastimgdegree2"
-             >
-             <span id="forecastTemp5"></span>
-            </p>
-            </div>
-
-         <div id="forecast">
-
-             <h3>article title</h3>
-			 <div id="articlecontainer">
-             
-			 <img
-             src="images/red-sunset.jpg"
-             alt="place holder image"
-             id="articleimagebig"
-             />
-			 
-			 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum exercitation ullamco
-                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-             </p>
-
-             <img
-             src="images/pink-clouds.png"
-             alt="place holder image"
-             id="articleimagesmall"
-             />
-
-			 </div>
-         </div>
-         <div id="cityID">5604473</div>
-         <script src="js/city-pages.js"></script>
-         <script src="js/weather.js"></script>
-         <script src="js/preston.js"></script>
-
-     </main>
-     <footer>
-
-
-			<div id="footercontainer">
-			<img
-            src="images/map-car.jpg"
+          <img
+            src="images/pink-clouds.png"
             alt="place holder image"
-            id="mapimagebig"
-            />
-
-            <div id="footertext">
-            <h3>Contact Information</h3>
-            <p>
-                &#128241;  Phone number: <br>
-            	&#x1F4E7; Email:
-            </p>
-            
-			<div id="socialmedialinks">
-                <a href="#"><img
-                    src="images/facebook-icon.png"
-                    alt="place holder image"
-                    id="social1"
-                    width="60"
-                    /></a>
-
-                <a href="#"><img
-                    src="images/insta-icon.png"
-                    alt="place holder image"
-                    id="social2"
-                    width="60"
-                    /></a>
-
-                <a href="#"><img
-                    src="images/pin-icon.png"
-                    alt="place holder image"
-                    id="social3"
-                    width="60"
-                    /></a>
-            </div>
-			
-			</div>
-			
-			</div>
-			<div id="footerbar">
-            <p>
-             &copy; <span id="currentYear"></span> Weather Ahead | Avery Lawton 
-            </p>
-            <p>
-                Current date: <span id="date"></span>
-            </p>
+            id="articleimagesmall"
+          />
         </div>
-     </footer>
-     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    
- </body>
+      </div>
+      <div id="cityID">5604473</div>
+      <div id="townname">Preston</div>
+      <script src="js/city-pages.js"></script>
+      <script src="js/townevents.js"></script>
+      <script src="js/weather.js"></script>
+      <script src="js/preston.js"></script>
+    </main>
+    <footer>
+      <div id="footercontainer">
+        <img
+          src="images/map-car.jpg"
+          alt="place holder image"
+          id="mapimagebig"
+        />
+
+        <div id="footertext">
+          <h3>Contact Information</h3>
+          <p>
+            &#128241; Phone number: <br />
+            &#x1F4E7; Email:
+          </p>
+
+          <div id="socialmedialinks">
+            <a href="#"
+              ><img
+                src="images/facebook-icon.png"
+                alt="place holder image"
+                id="social1"
+                width="60"
+            /></a>
+
+            <a href="#"
+              ><img
+                src="images/insta-icon.png"
+                alt="place holder image"
+                id="social2"
+                width="60"
+            /></a>
+
+            <a href="#"
+              ><img
+                src="images/pin-icon.png"
+                alt="place holder image"
+                id="social3"
+                width="60"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div id="footerbar">
+        <p>
+          &copy; <span id="currentYear"></span> Weather Ahead | Avery Lawton
+        </p>
+        <p>Current date: <span id="date"></span></p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  </body>
 </html>

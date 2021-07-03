@@ -93,6 +93,21 @@ nav {
   display: none;
 }
 
+#townevents {
+  color: #fffbee;
+  background-color: #f55355;
+  margin: auto;
+  width: 50%;
+  border: 3px solid black;
+  padding: 10px;
+  max-width: 400px;
+  margin-bottom: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+#upcomingeventstitle {
+  text-align: center;
+}
+
 .fivedayforcastimg {
   width: 50px;
   height: 50px;
@@ -185,6 +200,9 @@ footer {
   border-top: 5px solid black;
 }
 #cityID {
+  display: none;
+}
+#townname {
   display: none;
 }
 

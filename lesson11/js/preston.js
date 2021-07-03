@@ -10,5 +10,4 @@ else {
     //do not display
     document.getElementById("fridayalert").style.display = "none";
 }
-
-
+//_________________________________________________________________________________________________________//
