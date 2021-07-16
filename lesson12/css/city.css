@@ -1,4 +1,350 @@
-@media only screen and (min-width: 42em) {
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Playfair+Display&display=swap");
+
+h1 {
+  font-family: "Playfair Display", serif;
+  padding: 10px;
 }
+
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+}
+h4 {
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+}
+main {
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  /* max-width: 760px; */
+  background-color: #020a72;
+  font-family: "Inter", sans-serif;
+  /* justify-content: center; */
+  white-space: nowrap;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+.navigation a:hover {
+  color: #010544;
+  background-color: #4e57d8;
+}
+
+.active {
+  background: #020da0;
+  text-decoration: underline;
+}
+
+.responsive li {
+  display: block;
+}
+
+#austinskyline {
+  display: none;
+}
+
+#austinskylinesmall {
+  position: relative;
+  background-image: url("images/austinskyline-small.png");
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+#bluebackgroundcolor {
+  background-color: #1a2b5b;
+  margin-top: -20px;
+  width: 100%;
+  color: white;
+}
+#upcomingeventstitle {
+  margin-top: 2px;
+  padding: 10px;
+}
+.upcomingeventscards {
+  background-color: white;
+  color: #030c24;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+#outdooryoga {
+  background-color: white;
+  color: #030c24;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.upcomingeventscards p {
+  padding: 10px;
+}
+.upcomingeventscards h3 {
+  padding: 10px;
+}
+
+#batsbridge {
+  display: none;
+}
+
+#batsbridgesmall {
+  position: relative;
+  /* background-image: url("images/batsbridgesmall.png"); */
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+#darkbluebackgroundcolor {
+  background-color: #030c24;
+  margin-top: -30px;
+  width: 100%;
+  color: white;
+}
+#austinhistorytitle {
+  padding: 10px;
+}
+#historyimgcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.historyimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#historyarticle {
+  padding: 10px;
+}
+.historytext {
+  padding: 10px;
+}
+
+footer {
+  background-color: #020a72;
+  color: white;
+}
+#footertext {
+  padding: 20px 20px 20px 20px;
+}
+
+#footerbar {
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 10px;
+  border-top: 5px solid black;
+}
+
+/*_____________________________________________________________________________________________________*/
+
+@media only screen and (min-width: 42em) {
+  #navwrapper {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  nav {
+    position: unset;
+    top: auto;
+    right: auto;
+  }
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+
+  #austinskyline {
+    display: inline;
+    position: relative;
+    /* background-image: url("images/austinskyline.png"); */
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #austinskylinesmall {
+    display: none;
+  }
+
+  #batsbridgesmall {
+    display: none;
+  }
+
+  #batsbridge {
+    display: inline;
+    position: relative;
+    /* background-image: url("images/batsbridge.png");*/
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #upcomingevents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #upcomingeventstitle {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #historyimgcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer {
+    margin: auto;
+  }
+}
+/*_____________________________________________________________________________________________________*/
 @media only screen and (min-width: 60em) {
+  #navwrapper {
+    /*  margin: 0 auto; */
+    padding: 0;
+    max-width: 100%;
+  }
+
+  nav {
+    position: unset;
+    top: auto;
+    right: auto;
+    position: sticky;
+  }
+
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+  #austinskylinesmall {
+    display: none;
+  }
+
+  #upcomingevents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #upcomingeventscards {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    max-width: 90%;
+  }
+  #upcomingeventstitle {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #historyimgcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto 1fr auto 1fr auto;
+  }
+  #oldbartonsprings {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  #currentbartonsprings {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  #historytext1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  #oldUTtower {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  #currentUTtower {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  #historytext2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  footer {
+    clear: both;
+    margin: auto;
+  }
+  #footertext {
+    text-align: left;
+  }
+
+  #footercontainer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #socialmedialinks {
+    display: inline;
+    float: right;
+  }
 }

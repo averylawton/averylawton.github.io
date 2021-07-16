@@ -1,4 +1,214 @@
-@media only screen and (min-width: 42em) {
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Playfair+Display&display=swap");
+
+h1 {
+  font-family: "Playfair Display", serif;
 }
+
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+}
+main {
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  /* max-width: 760px; */
+  background-color: #020a72;
+  font-family: "Inter", sans-serif;
+  /* justify-content: center; */
+  white-space: nowrap;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+.navigation a:hover {
+  color: #010544;
+  background-color: #4e57d8;
+}
+
+.active {
+  background: #020da0;
+  text-decoration: underline;
+}
+
+.responsive li {
+  display: block;
+}
+footer {
+  background-color: #020a72;
+  color: white;
+}
+#footertext {
+  padding: 20px 20px 20px 20px;
+}
+
+#footerbar {
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 10px;
+  border-top: 5px solid black;
+}
+/*----------------------------------------------------------------------------------*/
+
+#weathercontainer {
+  max-width: 800px;
+}
+
+.threedayforcastimg {
+  width: 50px;
+  height: 50px;
+  display: block;
+  flex: 0 0 auto;
+  margin: 10px;
+}
+
+#forecastimages {
+  display: flex;
+  background-color: white;
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+#forecastimagestitles {
+  display: flex;
+  background-color: white;
+  height: 20px;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.threedayforcastimgtitle {
+  width: 50px;
+  height: 20px;
+  display: block;
+  flex: 0 0 auto;
+  margin: 10px;
+  text-align: center;
+}
+
+#forecastimagesdegrees {
+  display: flex;
+  background-color: white;
+  height: 30px;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.threedayforcastimgdegrees {
+  width: 50px;
+  height: 20px;
+  display: block;
+  flex: 0 0 auto;
+  margin: 0px 10px 0px 10px;
+  text-align: center;
+}
+/*------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 42em) {
+  #navwrapper {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  nav {
+    position: unset;
+    top: auto;
+    right: auto;
+  }
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+  footer {
+    margin: auto;
+  }
+}
+
 @media only screen and (min-width: 60em) {
+  #navwrapper {
+    /*  margin: 0 auto; */
+    padding: 0;
+    max-width: 100%;
+  }
+
+  nav {
+    position: unset;
+    top: auto;
+    right: auto;
+    position: sticky;
+  }
+
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+
+  footer {
+    clear: both;
+    margin: auto;
+  }
+  #footertext {
+    text-align: left;
+  }
+
+  #footercontainer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #socialmedialinks {
+    display: inline;
+    float: right;
+  }
 }
