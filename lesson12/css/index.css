@@ -136,6 +136,42 @@ footer {
 }
 /*------------------------------------------------------------------------------------------*/
 
+.municipalityimgs {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+#upcomingeventstitle {
+  margin-top: 2px;
+  padding: 10px;
+}
+.upcomingeventscards {
+  background-color: white;
+  color: #030c24;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+#outdooryoga {
+  background-color: white;
+  color: #030c24;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.upcomingeventscards p {
+  padding: 10px;
+}
+.upcomingeventscards h3 {
+  padding: 10px;
+}
+
 @media only screen and (min-width: 42em) {
   #navwrapper {
     margin: 0 auto;
@@ -161,6 +197,18 @@ footer {
   .navigation li:first-child {
     display: none;
   }
+
+  #upcomingevents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #upcomingeventstitle {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
   footer {
     margin: auto;
   }
@@ -194,6 +242,22 @@ footer {
     display: none;
   }
 
+  #upcomingevents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #upcomingeventscards {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    max-width: 90%;
+  }
+  #upcomingeventstitle {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
   footer {
     clear: both;
     margin: auto;
@@ -210,5 +274,9 @@ footer {
   #socialmedialinks {
     display: inline;
     float: right;
+  }
+  #imgcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

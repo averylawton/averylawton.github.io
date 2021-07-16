@@ -5,95 +5,172 @@
 
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/w12-fav-icon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="images/w12-fav-icon.ico"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
 
   <body>
-<header>
-    <div id="navwrapper">
-      <nav>
-        <ul class="navigation">
-          <li><a class="menu1" href="#">Menu</a></li>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="city.html">Austin</a></li>
-          <li><a href="join.html">Join the Chamber</a></li>
-          <li><a href="directory.html">Directory</a></li>
-          <li><a href="contact.html">Contact us</a></li>
-        </ul>
-      </nav>
-    </div>
+    <header>
+      <div id="navwrapper">
+        <nav>
+          <ul class="navigation">
+            <li><a class="menu1" href="#">Menu</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="city.html">Austin</a></li>
+            <li><a href="join.html">Join the Chamber</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
 
-    <h1>Home</h1>
-
-  </header>
+      <h1>Home</h1>
+    </header>
 
     <main>
+      <div id="imgcontainer">
+        <img
+          src="images/austincapbuilding.jpg"
+          alt="Austin captial building"
+          id="capbuilding"
+          class="municipalityimgs"
+        />
+        <img
+          src="images/austin-sunset.jpg"
+          alt="Austin sunset"
+          id="austinsunset"
+          class="municipalityimgs"
+        />
+        <img
+          src="images/cap-roof.jpg"
+          alt="Austin captial building roof"
+          id="caproof"
+          class="municipalityimgs"
+        />
+      </div>
 
+      <hr color="#020a72" size="6px" />
 
+      <div id="upcomingevents">
+        <div class="upcomingeventscards">
+          <a href="https://blackstar.coop/" target="_blank">
+            <img
+              src="images/blackstarstorefront.jpg"
+              alt="black star store front"
+              id="outdooryoga"
+            />
+          </a>
+          <h3>Black Star Co-op Pub and Brewery</h3>
+          <p>
+            Black Star is the world’s first cooperatively-owned and worker
+            self-managed brewpub, sustained by a community of more than 3,000
+            member-owners. Black Star pays their workers a livable wage without
+            accepting tips. They believe that tips should not motivate workers
+            to provide excellent customer service.
+          </p>
+        </div>
+
+        <div class="upcomingeventscards">
+          <a
+            href="https://gourdoughs.com/"
+            target="_blank"
+          >
+            <img
+              src="images/jawsonthewater.png"
+              alt="Jaws on the water event ad"
+              id="outdooryoga"
+            />
+          </a>
+          <h3>Gourdough's Big. Fat. Donuts.</h3>
+          <p>
+            These are not your average pastries, and the donuts the size of your
+            face being served from the trailer’s window prove it. People line up
+            for these goodies, then sit around picnic tables to dig in, compare,
+            and contrast. Locals and visitors alike come for the treats, and
+            there is something for everyone.
+          </p>
+        </div>
+
+        <div class="upcomingeventscards">
+          <a
+            href="https://www.eventbrite.com/e/floral-buttercream-workshop-tickets-159908000133?aff=ebdssbcitybrowse&keep_tld=1"
+            target="_blank"
+          >
+            <img
+              src="images/flowerfrosting.png"
+              alt="frosting flowers"
+              id="outdooryoga"
+            />
+          </a>
+          <h3>Floral Buttercream Workshop</h3>
+          <p>
+            Join Sweet Bouquets Cupcakes for a fun night learning about
+            buttercream and how to transform it into beautiful flowers. They
+            will teach you how to pipe 5 different flowers and show you how to
+            arrange them into a 7 cupcake bouquet for you to take home. All
+            supplies are provided, just bring yourself, a friend and a
+            willingness to learn!
+          </p>
+        </div>
+      </div>
 
       <h2 id="forecasttitle">Three Day Forcast</h2>
       <div id="weathercontainer">
+        <div id="forecastimagestitles">
+          <p class="threedayforcastimgtitle" id="forecastimgtitle1">
+            <span id="dayOfWeek1"></span>
+          </p>
+          <p class="threedayforcastimgtitle">
+            <span id="dayOfWeek2"></span>
+          </p>
+          <p class="threedayforcastimgtitle">
+            <span id="dayOfWeek3"></span>
+          </p>
+        </div>
 
-      <div id="forecastimagestitles">   
-         <p 
-         class="threedayforcastimgtitle"
-          id="forecastimgtitle1"
-          >
-             <span id="dayOfWeek1"></span>
-         </p>
-         <p class="threedayforcastimgtitle">
-             <span id="dayOfWeek2"></span>
-         </p>
-         <p class="threedayforcastimgtitle">
-             <span id="dayOfWeek3"></span>
-         </p>
-         </div>
-
-      <div id="forecastimages">   
-         <img
+        <div id="forecastimages">
+          <img
             src="images/sunicon.png"
             alt="place holder image"
             class="threedayforcastimg"
             id="forecastimg1"
-         />
-         <img
+          />
+          <img
             src="images/sunicon.png"
             alt="place holder image"
             class="threedayforcastimg"
             id="forecastimg2"
-         />
-    
-         <img
+          />
+
+          <img
             src="images/sunicon.png"
             alt="place holder image"
             class="threedayforcastimg"
             id="forecastimg5"
-         />
-     </div>
-
-     <div id="forecastimagesdegrees">   
-         <p 
-         class="threedayforcastimgdegrees"
-          id="forecastimgdegree1"
-          >
-          <span id="forecastTemp1"></span>
-         </p>
-         <p class="threedayforcastimgdegrees">
-             <span id="forecastTemp2"></span>
-         </p>
-         <p class="threedayforcastimgdegrees">
-             <span id="forecastTemp3"></span>
-         </p>
-         </div>
+          />
         </div>
+
+        <div id="forecastimagesdegrees">
+          <p class="threedayforcastimgdegrees" id="forecastimgdegree1">
+            <span id="forecastTemp1"></span>
+          </p>
+          <p class="threedayforcastimgdegrees">
+            <span id="forecastTemp2"></span>
+          </p>
+          <p class="threedayforcastimgdegrees">
+            <span id="forecastTemp3"></span>
+          </p>
+        </div>
+      </div>
     </main>
 
     <footer>
-
       <div id="footercontainer">
-
         <div id="footertext">
           <h3>Contact Information</h3>
           <p>
@@ -130,9 +207,11 @@
       </div>
       <div id="footerbar">
         <p>
-          &copy; <span id="currentYear"></span>  | Avery Lawton | <a href="attribution-page.html">attribution Page</a>
+          &copy; <span id="currentYear"></span> | Avery Lawton |
+          <a href="attribution-page.html">attribution Page</a>
         </p>
-        <p>Current date: <span id="date"></span> <br>
+        <p>
+          Current date: <span id="date"></span> <br />
           <span id="lastVisit"></span>
         </p>
       </div>
