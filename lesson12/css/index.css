@@ -65,6 +65,10 @@ nav {
   display: block;
 }
 
+hr {
+  color: #020a72;
+}
+
 /*_______________________________________pop up bar______________________________________________*/
 
 .ShowHide {
@@ -199,7 +203,7 @@ footer {
   margin-right: auto;
   width: 90%;
 }
-#outdooryoga {
+.cardsevents {
   background-color: white;
   color: #030c24;
   display: block;
@@ -257,7 +261,7 @@ footer {
     display: none;
   }
 
-  #upcomingevents {
+  .upcomingevents {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -301,7 +305,7 @@ footer {
     display: none;
   }
 
-  #upcomingevents {
+  .upcomingevents {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
