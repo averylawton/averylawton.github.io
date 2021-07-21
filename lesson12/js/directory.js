@@ -1,6 +1,4 @@
-const requestURL = 'js/localshops.json';
-
-//https://averylawton.github.io/lesson12/js/localshops.json
+const requestURL = 'https://averylawton.github.io/lesson12/js/localshops.json';
 
 fetch(requestURL)
   .then(function (response) {
@@ -42,6 +40,50 @@ card.appendChild(logo);
 
 document.querySelector('div.cards').appendChild(card);
 
+//_______________________________________________________________________________________________________//
+
+let link = document.createElement('div');
+
+link.textContent = "Contact Info: " + localbusinesses[i].link;
+
+logo.setAttribute('src', localbusinesses[i].logo);
+
+
+card.appendChild(link);
+
+document.querySelector('div.cards').appendChild(card);
+
 }
 
 });
+
+ // Get the elements with class="column"
+ var elements = document.getElementsByClassName("column");
+
+ // Declare a loop variable
+ var i;
+
+ // List View
+ function listView() {
+   for (i = 0; i < elements.length; i++) {
+     elements[i].style.width = "100%";
+   }
+ }
+
+ // Grid View
+ function gridView() {
+   for (i = 0; i < elements.length; i++) {
+     elements[i].style.width = "50%";
+   }
+ }
+
+ /* Optional: Add active class to the current button (highlight it) */
+ var container = document.getElementById("btnContainer");
+ var btns = container.getElementsByClassName("btn");
+ for (var i = 0; i < btns.length; i++) {
+   btns[i].addEventListener("click", function () {
+     var current = document.getElementsByClassName("active");
+     current[0].className = current[0].className.replace(" active", "");
+     this.className += " active";
+   });
+ }

@@ -3,6 +3,7 @@
 
 h1 {
   font-family: "Playfair Display", serif;
+  padding: 20px;
 }
 
 h2 {
@@ -63,6 +64,36 @@ nav {
 .responsive li {
   display: block;
 }
+
+/*_______________________________________pop up bar______________________________________________*/
+
+.ShowHide {
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #882c26;
+  color: #ffffff;
+  padding: 4px;
+}
+#weatheralert {
+  overflow: hidden;
+  padding: 5px;
+}
+#closebutton {
+  float: right;
+  width: 30px;
+  height: 20px;
+  text-align: center;
+}
+.ShowHide a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.ShowHide a:hover {
+  text-decoration: underline;
+}
+
+/*_________________________________________________________________________________________________*/
+
 footer {
   background-color: #020a72;
   color: white;
@@ -79,7 +110,9 @@ footer {
 /*----------------------------------------------------------------------------------*/
 
 #weathercontainer {
-  max-width: 800px;
+  /* max-width: 800px; */
+  margin: auto;
+  width: 50%;
 }
 
 .threedayforcastimg {
@@ -92,7 +125,6 @@ footer {
 
 #forecastimages {
   display: flex;
-  background-color: white;
   height: 80px;
   width: 100%;
   justify-content: space-between;
@@ -101,7 +133,6 @@ footer {
 
 #forecastimagestitles {
   display: flex;
-  background-color: white;
   height: 20px;
   width: 100%;
   justify-content: space-between;
@@ -112,14 +143,13 @@ footer {
   width: 50px;
   height: 20px;
   display: block;
-  flex: 0 0 auto;
+  /*flex: 0 0 auto;*/
   margin: 10px;
   text-align: center;
 }
 
 #forecastimagesdegrees {
   display: flex;
-  background-color: white;
   height: 30px;
   width: 100%;
   justify-content: space-between;
@@ -130,24 +160,37 @@ footer {
   width: 50px;
   height: 20px;
   display: block;
-  flex: 0 0 auto;
+  /*flex: 0 0 auto;*/
   margin: 0px 10px 0px 10px;
   text-align: center;
+}
+
+#weatherbackgroundcolor {
+  background-color: #030c24;
+  color: white;
+  padding: 10px;
 }
 /*------------------------------------------------------------------------------------------*/
 
 .municipalityimgs {
+  display: none;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
   padding: 10px;
+  grid-column: 2;
 }
 
 #upcomingeventstitle {
   margin-top: 2px;
   padding: 10px;
 }
+
+#upcomingeventstext {
+  padding: 10px;
+}
+
 .upcomingeventscards {
   background-color: white;
   color: #030c24;
@@ -170,6 +213,22 @@ footer {
 }
 .upcomingeventscards h3 {
   padding: 10px;
+}
+
+#calltoaction {
+  background-color: #030c24;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+#calltoaction a {
+  color: white;
+}
+
+#shortweatherbox {
+  padding: 0px 0px 0px 10px;
 }
 
 @media only screen and (min-width: 42em) {
@@ -273,7 +332,6 @@ footer {
 
   #socialmedialinks {
     display: inline;
-    float: right;
   }
   #imgcontainer {
     display: grid;

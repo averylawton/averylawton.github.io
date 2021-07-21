@@ -29,10 +29,20 @@
         </nav>
       </div>
 
+      <div class="ShowHide" id="Bar">
+        <div id="closebutton">
+          <a href="#" onclick="Hide(Bar);">X</a>
+        </div>
+        <div id="weatheralert">
+          
+        </div>
+      </div>
+
       <h1>Home</h1>
     </header>
 
     <main>
+
       <div id="imgcontainer">
         <img
           src="images/austincapbuilding.jpg"
@@ -54,9 +64,9 @@
         />
       </div>
 
-      <hr color="#020a72" size="6px" />
-
+      <p id="upcomingeventstext">Austin is known for its music, attractions, and most importantly, food. Support some of Austin’s best dining locations and RSVP a table today!</p>
       <div id="upcomingevents">
+
         <div class="upcomingeventscards">
           <a href="https://blackstar.coop/" target="_blank">
             <img
@@ -81,8 +91,8 @@
             target="_blank"
           >
             <img
-              src="images/jawsonthewater.png"
-              alt="Jaws on the water event ad"
+              src="images/donutpicture.jpg"
+              alt="Gourdough's Big. Fat. Donuts."
               id="outdooryoga"
             />
           </a>
@@ -98,28 +108,39 @@
 
         <div class="upcomingeventscards">
           <a
-            href="https://www.eventbrite.com/e/floral-buttercream-workshop-tickets-159908000133?aff=ebdssbcitybrowse&keep_tld=1"
+            href="https://restaurantjezebel.com/"
             target="_blank"
           >
             <img
-              src="images/flowerfrosting.png"
-              alt="frosting flowers"
+              src="images/dinnerpicture.jpg"
+              alt="picture of a restaurant"
               id="outdooryoga"
             />
           </a>
-          <h3>Floral Buttercream Workshop</h3>
+          <h3>Restaurant Jezebel</h3>
           <p>
-            Join Sweet Bouquets Cupcakes for a fun night learning about
-            buttercream and how to transform it into beautiful flowers. They
-            will teach you how to pipe 5 different flowers and show you how to
-            arrange them into a 7 cupcake bouquet for you to take home. All
-            supplies are provided, just bring yourself, a friend and a
-            willingness to learn!
+            Restaurant Jezebel is an upcoming restaurant with a lot of character. The menu is ambitious, with combinations of flavors from all over the world. The prices are at the upper end of Austin dining, but so is the originality and service. It is a great staple of what Austin is all about, and the service can't be beat.
           </p>
         </div>
       </div>
 
-      <h2 id="forecasttitle">Three Day Forcast</h2>
+        <hr color="#020a72" size="6px" />
+
+        <div id="weatherbackgroundcolor">
+      <div id="shortweatherbox">
+        <h2 id="forecasttitle">Three Day Forcast</h2>
+
+        <div id="weathersummary">
+          <h3>weather summary</h3>
+          <p class="summarytext">
+              Currently: <span id="currentCondition"></span> <br>
+              Temp: <span id="currentTemp"></span> F <br>
+              Humidity: <span id="humidity"></span>% <br>
+          </p>
+      </div>
+      </div>
+
+     
       <div id="weathercontainer">
         <div id="forecastimagestitles">
           <p class="threedayforcastimgtitle" id="forecastimgtitle1">
@@ -135,23 +156,23 @@
 
         <div id="forecastimages">
           <img
-            src="images/sunicon.png"
+            src="#"
             alt="place holder image"
             class="threedayforcastimg"
             id="forecastimg1"
           />
           <img
-            src="images/sunicon.png"
+            src="#"
             alt="place holder image"
             class="threedayforcastimg"
             id="forecastimg2"
           />
 
           <img
-            src="images/sunicon.png"
+            src="#"
             alt="place holder image"
             class="threedayforcastimg"
-            id="forecastimg5"
+            id="forecastimg3"
           />
         </div>
 
@@ -167,6 +188,96 @@
           </p>
         </div>
       </div>
+    </div>
+
+      <hr color="#020a72" size="6px" />
+
+
+      <hr color="#020a72" size="6px" />
+
+      <div id="upcomingevents">
+        <h2 id="upcomingeventstitle">Upcoming Events</h2>
+
+        <div class="upcomingeventscards">
+          <a
+            href="http://https://www.myvinyasapractice.com/practice-yoga/community-yoga-events/"
+            target="_blank"
+          >
+            <img
+              src="images/outdooryoga.jpg"
+              alt="outdoor yoga example"
+              id="outdooryoga"
+            />
+          </a>
+          <h3>Self-Love Sunday Free Outdoor Yoga</h3>
+          <p>
+            Join Alyssa Clark on the lawn at My Vinyasa Practice for a FREE
+            Community Outdoor Yoga! They gather at noon to flow under the
+            Austin sun every Sunday. Alyssa Clark will lead you through a 60
+            minute all-levels flow focused on loving and giving gratitude to
+            the most important person in your life – you!
+          </p>
+        </div>
+
+        <div class="upcomingeventscards">
+          <a
+            href="https://www.eventbrite.com/e/jaws-on-the-water-tickets-158966899275?aff=ebdssbcitybrowse"
+            target="_blank"
+          >
+            <img
+              src="images/jawsonthewater.jpg"
+              alt="Jaws on the water event ad"
+              id="outdooryoga"
+            />
+          </a>
+          <h3>Jaws On the Water</h3>
+          <p>
+            This summer, the Alamo Drafthouse is partnering with Action Pack
+            Entertainment and High Beam Events to bring JAWS on the Water back
+            to Volente Beach on Lake Travis! Get ready for scuba divers (and
+            maybe other critters) lurking in the depths beneath your tube,
+            ready to grab your dangling toes during on screen shark attacks!
+          </p>
+        </div>
+
+        <div class="upcomingeventscards">
+          <a
+            href="https://www.eventbrite.com/e/floral-buttercream-workshop-tickets-159908000133?aff=ebdssbcitybrowse&keep_tld=1"
+            target="_blank"
+          >
+            <img
+              src="images/flowerfrosting.jpg"
+              alt="frosting flowers"
+              id="outdooryoga"
+            />
+          </a>
+          <h3>Floral Buttercream Workshop</h3>
+          <p>
+            Join Sweet Bouquets Cupcakes for a fun night learning about
+            buttercream and how to transform it into beautiful flowers. They
+            will teach you how to pipe 5 different flowers and show you how to
+            arrange them into a 7 cupcake bouquet for you to take home. All
+            supplies are provided, just bring yourself, a friend and a
+            willingness to learn!
+          </p>
+        </div>
+        </div>
+        <div id="calltoaction">
+          <p>
+            <h2>Join our community</h2>
+            "The diversity of size and specialty in a chamber of commerce creathes a synergy within to support the many needs and projects of the business community."<br> -Joseph Henning CEO of the Aurura Regional Chamber of Commerce for 14 years
+          <br><br>
+            some of the benefits include...<br><br>
+            Publicity boosts<br>
+            Networking opportunities<br>
+            Mailing list access<br>
+            Freebies & discounts<br>
+            <br><br>
+            <a href="join.html">Join the Chamber</a>
+          </p>
+          
+        </div>
+
     </main>
 
     <footer>
@@ -218,5 +329,6 @@
     </footer>
     <script src="js/menu-function.js"></script>
     <script src="js/footercontent.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

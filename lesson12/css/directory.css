@@ -18,6 +18,7 @@ p {
 }
 main {
   font-family: "Inter", sans-serif;
+  margin: 20px;
 }
 
 nav {
@@ -64,6 +65,88 @@ nav {
   display: block;
 }
 
+.buttons {
+  display: flex;
+}
+.buttons div {
+  margin: 0px 10px;
+  color: #fffffa;
+  cursor: pointer;
+}
+.buttons div > * {
+  pointer-events: none;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+section {
+  border: solid 3px black;
+  margin: 3px 3px 3px 3px;
+  padding: 4px 4px 4px 4px;
+  background-color: white;
+  min-height: 500px;
+}
+
+section h2 {
+  color: rgb(52, 52, 134);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  color: rgb(52, 52, 134);
+}
+section img {
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  margin-top: 5px;
+}
+/*-----------------------------------------grid switch--------------------------------------------------------*/
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/*-----------------------------------------grid switch--------------------------------------------------------*/
+
 footer {
   background-color: #020a72;
   color: white;
@@ -104,6 +187,11 @@ footer {
     display: none;
   }
 
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   footer {
     margin: auto;
   }
@@ -135,6 +223,11 @@ footer {
   }
   .navigation li:first-child {
     display: none;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   footer {
