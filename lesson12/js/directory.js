@@ -11,14 +11,18 @@ fetch(requestURL)
 
     for (let i = 0; i < localbusinesses.length; i++ ) {
 
-      let card = document.createElement('section');
+let column = document.createElement('div');
+column.setAttribute('class', 'col');
+
+let card = document.createElement('section');
 let h2 = document.createElement('h2');
 
 h2.textContent = localbusinesses[i].name;
 
 card.appendChild(h2);
 
-document.querySelector('div.cards').appendChild(card);
+document.querySelector('div.wrapper').appendChild(column);
+column.appendChild(card);
 //________________________________________________________________________________________________________//
 
 let contactinfo = document.createElement('div');
@@ -27,7 +31,6 @@ contactinfo.textContent = "Contact Info: " + localbusinesses[i].contactinfo;
 
 card.appendChild(contactinfo);
 
-document.querySelector('div.cards').appendChild(card);
 //________________________________________________________________________________________________________//
 
 let logo = document.createElement('img');
@@ -37,53 +40,39 @@ logo.setAttribute('alt', localbusinesses[i].name);
 
 
 card.appendChild(logo);
-
-document.querySelector('div.cards').appendChild(card);
-
 //_______________________________________________________________________________________________________//
 
 let link = document.createElement('div');
 
-link.textContent = "Contact Info: " + localbusinesses[i].link;
+link.textContent = "Website: ";
+let anchor = document.createElement('a');
+anchor.setAttribute("href", localbusinesses[i].link);
+anchor.textContent = "Website";
+link.appendChild(anchor);
 
 logo.setAttribute('src', localbusinesses[i].logo);
 
 
 card.appendChild(link);
 
-document.querySelector('div.cards').appendChild(card);
-
 }
 
 });
 
- // Get the elements with class="column"
- var elements = document.getElementsByClassName("column");
+var wrapper = document.getElementById("wrapper");
 
- // Declare a loop variable
- var i;
+document.addEventListener("click", function (event) {
+  if (!event.target.matches(".list")) return;
 
- // List View
- function listView() {
-   for (i = 0; i < elements.length; i++) {
-     elements[i].style.width = "100%";
-   }
- }
+  // List view
+  event.preventDefault();
+  wrapper.classList.add("list");
+});
 
- // Grid View
- function gridView() {
-   for (i = 0; i < elements.length; i++) {
-     elements[i].style.width = "50%";
-   }
- }
+document.addEventListener("click", function (event) {
+  if (!event.target.matches(".grid")) return;
 
- /* Optional: Add active class to the current button (highlight it) */
- var container = document.getElementById("btnContainer");
- var btns = container.getElementsByClassName("btn");
- for (var i = 0; i < btns.length; i++) {
-   btns[i].addEventListener("click", function () {
-     var current = document.getElementsByClassName("active");
-     current[0].className = current[0].className.replace(" active", "");
-     this.className += " active";
-   });
- }
+  // List view
+  event.preventDefault();
+  wrapper.classList.remove("list");
+});

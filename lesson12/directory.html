@@ -10,6 +10,10 @@
       href="images/w12-fav-icon.ico"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/directory.css" />
   </head>
@@ -31,23 +35,17 @@
 
       <h1>Directory</h1>
 
-      <div id="btnContainer">
-        <button class="btn" onclick="listView()">
-          <i class="fa fa-bars"></i> List
-        </button>
-        <button class="btn active" onclick="gridView()">
-          <i class="fa fa-th-large"></i> Grid
-        </button>
-      </div>
-      <br />
-    </header>
-
     <main>
-      <div class="column">
-        <div class="row">
-          <div class="cards"></div>
+      
+      <div class="container">
+        <div class="buttons">
+          <div class="list"><i class="fa fa-list"></i></div>
+          <div class="grid"><i class="fa fa-th-large"></i></div>
+        </div>
+        <div class="wrapper" id="wrapper">
         </div>
       </div>
+      
     </main>
 
     <footer>
