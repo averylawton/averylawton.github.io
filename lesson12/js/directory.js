@@ -44,7 +44,7 @@ card.appendChild(logo);
 
 let link = document.createElement('div');
 
-link.textContent = "Website: ";
+link.textContent = "Link: ";
 let anchor = document.createElement('a');
 anchor.setAttribute("href", localbusinesses[i].link);
 anchor.textContent = "Website";
